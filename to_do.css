@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color:#A1C2F1;
+    color: black;
+}
+header{
+    padding: 2rem 1.12rem;
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+header h1{
+    font-size: 2.46rem;
+    font-weight: 300;
+    color: #0A6EBD;
+    margin-bottom: 1.12rem;
+}
+#form{
+    display: flex;
+}
+input button{
+    appearance: none;
+    border: none;
+    
+}
+#new-task-input{
+    flex: 1 1 0%;
+    background-color:rgba(181, 187, 186, 0.603);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: black;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+#new-task-inpu::placeholder{
+    color: rgb(63, 14, 14);
+}
+#smbt{
+    font-size: 1.2rem;
+    background-color: #5A96E3;
+    font-weight: 500;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#smbt:hover{
+    opacity: 0.8;
+}
+#smbt:active{
+    opacity: 0.65;
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tsk{
+    padding: 1rem;
+}
+.tsk h2{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #0A6EBD;
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color:#0A6EBD ;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+#tasks .task .content .text{
+    color: black;
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+
+}
+#tasks .task .content .text:not(:read-only){
+    color: rgb(245, 90, 116);
+}
+#tasks .task .action{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.task .action button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.225rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.task .action button:hover{
+    opacity: 0.8;
+}
+.task .action button:active{
+    opacity: 0.8;
+}
+.task .action .edt{
+    background-color: pink;
+}
+.task .action .dlt{
+    background-color: red;
+}
